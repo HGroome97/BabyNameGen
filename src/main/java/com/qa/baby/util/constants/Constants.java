@@ -33,5 +33,12 @@ public class Constants {
     	add("y");
     	add("z");
     }};
+    
+    public static final List<String> bannedNames = new ArrayList<String>() {{
+    	add("Batman");
+    	add("Nutella");
+    	add("Rambo");
+    	
+    }};
 
 }
