@@ -22,15 +22,7 @@ public class BabyNameServiceImpl implements BabyNameService {
 	private NameGenerator nameGenerator;
 
 	public String createBabyName(int length, String start) {
-		String generatedName = nameGenerator.nameCreator(length, start);
-		if(Constants.bannedNames.stream().anyMatch(str -> str.trim().equals(generatedName))==true){
-			throw new BabyNameBannedException(generatedName);
-		}else if(generatedName.length()>12) {
-			throw new BabyNameTooLongException(generatedName.length());
-		}else {
-			return generatedName;
-		}
-		
+		return nameGenerator.nameCreator(length, start);
 	}
 
 }
