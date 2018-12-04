@@ -9,7 +9,7 @@ public class NameGenerator {
 	private List<String> letterArray = Constants.letterArray;
 	
 	public String nameCreator(int length, String start) { 
-		if(length>start.length()) {
+		if(length<start.length()) {
 			return "The name start must be shorter than the length";
 		}else {
 			StringBuilder generatedName = new StringBuilder();

@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.qa.baby.persistence.domain.BabyName;
 import com.qa.baby.persistence.repository.BabyNameRepository;
-import com.qa.baby.util.generators.CreateAccount;
 import com.qa.baby.util.generators.NameGenerator;
 
 @Service
